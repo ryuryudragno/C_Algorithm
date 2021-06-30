@@ -79,9 +79,11 @@ int main() {
     printf("r(x)=\n");
     rat_display(a, b, n, m);
     printf("\n");
+
     printf("x0 y0 = ");
     scanf("%lf %lf", &x0, &y0);
     printf("\n");
+
     printf("z0 = %.3f %+.3f i\n", x0, y0);
     c_poly_eval(a, n, x0, y0, &p_x0, &p_y0);
     printf("p(z0) = %.3f %+.3f i\n", p_x0, p_y0);
